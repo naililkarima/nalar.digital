@@ -38,9 +38,14 @@ header {
     flex: 1;
 }
 
-/* Login */
+/* --- REVISI BAGIAN LOGIN (Posisi di Tengah) --- */
 #login {
     text-align: center;
+    /* Tambahan Flexbox agar konten benar-benar di tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .role-buttons {
@@ -77,15 +82,23 @@ header {
     margin-bottom: 22px;
     font-weight: 700;
     text-shadow: 0 1px 3px #fff9c4;
+    /* Pastikan judul juga center jika diinginkan, atau hapus baris ini jika ingin rata kiri */
+    text-align: center; 
 }
 
 form {
     margin-bottom: 35px;
+    /* Agar form container juga menyesuaikan posisi */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* --- REVISI INPUT & BUTTON (Agar tidak menempel kiri) --- */
 input, select, textarea, button {
     display: block;
-    margin: 14px 0;
+    /* UBAH DARI '14px 0' MENJADI '14px auto' */
+    margin: 14px auto; 
     padding: 14px;
     width: 100%;
     max-width: 520px;
@@ -164,7 +177,8 @@ ul {
     list-style: none;
     padding: 0;
     max-width: 700px;
-    margin-top: 10px;
+    /* Center list juga agar rapi */
+    margin: 10px auto; 
 }
 
 li {
@@ -194,6 +208,7 @@ li small {
     font-size: 1.4em;
     margin-top: 28px;
     text-shadow: 0 0 4px #fceabbcc;
+    text-align: center;
 }
 
 /* Tombol Keluar */
@@ -204,12 +219,13 @@ li small {
     padding: 12px 24px;
     border-radius: 14px;
     cursor: pointer;
-    margin-bottom: 22px;
+    margin: 0 auto 22px auto; /* Center tombol logout */
     font-weight: 700;
     font-size: 1.1em;
     box-shadow: 0 5px 18px rgba(255, 184, 0, 0.65);
     transition: background-color 0.3s ease, transform 0.2s ease;
     max-width: 180px;
+    display: block; /* Pastikan block agar margin auto bekerja */
 }
 
 .logout-btn:hover {
