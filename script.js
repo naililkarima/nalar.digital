@@ -24,24 +24,24 @@ function login(event) {
     const password = document.getElementById('password').value.trim();
 
     // Algoritma login
-    if (username === 'siswa' && password === 'blablava') {
+    if (username === 'siswa' && password === '123654') {
         currentRole = 'siswa';
         document.getElementById('login').style.display = 'none';
         document.getElementById('content').style.display = 'block';
         loadContent();
-    } else if (username === 'guru' && password === 'blablabla') {
+    } else if (username === 'guru' && password === 'abcfed') {
         currentRole = 'guru';
         document.getElementById('login').style.display = 'none';
         document.getElementById('content').style.display = 'block';
         loadContent();
-    } else if (username === 'penjaga perpus' && password === 'blablabla') {
+    } else if (username === 'penjaga perpus' && password === '123abc') {
         currentRole = 'penjaga';
         document.getElementById('login').style.display = 'none';
         document.getElementById('content').style.display = 'block';
         loadContent();
     } else {
         // Perbaikan: Tambahkan informasi username dan password yang benar di alert
-        alert('Username atau password salah! Coba lagi. (Hint untuk demo: siswa/blablava, guru/blablabla, penjaga perpus/blablabla)');
+        alert('Username atau password salah! Coba lagi. (Hint untuk demo: siswa/123654, guru/abcfed, penjaga perpus/123abc)');
     }
 }
 
