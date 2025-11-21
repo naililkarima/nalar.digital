@@ -100,7 +100,7 @@ function loadContent() {
             <h3>Tambah Buku Baru</h3>
             <form id="bookForm">
                 <input type="text" id="bookTitle" placeholder="Judul Buku" required />
-                <input type="text" id="bookResi" placeholder="Nomor Resi Buku (isi manual)" required />
+                <input type="text" id="bookResi" placeholder="Nomor Resi Buku" required />
                 <select id="bookKategori" required>
                     <option value="">Pilih Kategori</option>
                     <option value="Novel">Novel</option>
